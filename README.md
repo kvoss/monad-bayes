@@ -1,2 +1,2 @@
 # monad-bayes
-A library for probabilistic programming in Haskell. Uses a probability monad with conditioning primitives to specify models. Inference is performed by Particle Markov Chain Monte Carlo methods. Documentation and examples are coming.
+This branch contains a version of code used to typeset the corresponding paper. The code available here is not meant to be executed and may not even compile.
