@@ -66,7 +66,7 @@ finished = fmap isRight . resume . runParticle
 -- | Modify the transformed monad.
 -- This operation only applies to computation up to the first barrier.
 mapMonad :: Monad m =>
-            (forall a . m a -> m a) -> Particle m a -> Particle m a
+            (forall a. m a -> m a) -> Particle m a -> Particle m a
 mapMonad f = Particle . Coroutine . f . resume . runParticle
 
 type instance CustomReal (Particle m) = CustomReal m
